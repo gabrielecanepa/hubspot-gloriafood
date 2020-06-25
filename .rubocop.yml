@@ -1,0 +1,90 @@
+AllCops:
+  Include:
+    - Rakefile
+    - "**/Gemfile"
+    - "**/*.gemspec"
+    - "**/*.rake"
+    - "**/*.rb"
+  TargetRubyVersion: 2.7
+
+Layout/ClassStructure:
+  Enabled: true
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: false
+Layout/LineLength:
+  Max: 120
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: false
+Lint/MixedRegexpCaptureTypes:
+  Enabled: false
+Lint/RaiseException:
+  Enabled: false
+Lint/StructNewOverride:
+  Enabled: false
+
+Metrics/BlockLength:
+  Max: 100
+
+Naming/MethodParameterName:
+  MinNameLength: 1
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/EachWithObject:
+  Enabled: false
+Style/ExponentialNotation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: false
+Style/HashTransformKeys:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: false
+Style/Lambda:
+  EnforcedStyle: literal
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  IgnoredMethods:
+    [
+      "authorize",
+      "desc",
+      "gem",
+      "has_many",
+      "head",
+      "puts",
+      "raise",
+      "redirect_to",
+      "render",
+      "require",
+      "require_relative",
+      "ruby",
+      "run",
+      "separator",
+      "source",
+      "yield",
+    ]
+Style/MultilineMethodSignature:
+  Enabled: true
+Style/RedundantFetchBlock:
+  Enabled: false
+Style/RedundantRegexpCharacterClass:
+  Enabled: false
+Style/RedundantRegexpEscape:
+  Enabled: false
+Style/SlicingWithRange:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
