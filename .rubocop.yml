@@ -60,6 +60,7 @@ Style/MethodCallWithArgsParentheses:
       "gem",
       "has_many",
       "head",
+      "instance_of?",
       "puts",
       "raise",
       "redirect_to",
@@ -70,6 +71,7 @@ Style/MethodCallWithArgsParentheses:
       "run",
       "separator",
       "source",
+      "task",
       "yield",
     ]
 Style/MultilineMethodSignature:
@@ -84,7 +86,3 @@ Style/SlicingWithRange:
   Enabled: false
 Style/StringLiterals:
   EnforcedStyle: double_quotes
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: consistent_comma
